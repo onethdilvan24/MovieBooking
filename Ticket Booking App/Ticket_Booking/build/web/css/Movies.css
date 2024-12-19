@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Outfit:wght@900&family=Roboto:ital,wght@0,100;1,100&family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Outfit:wght@900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;1,100&family=Rubik+Doodle+Shadow&display=swap');
+
+
+body {
+    background-color: #100425;
+}
+
+
+
+
+/* Header */
+
+.masthead {
+    height: 20vh;
+    min-height: 300px;
+    color: white;
+    margin-bottom: -40px;
+  }
+
+.masthead .fw-light{
+    font-family: "Jomhuria", serif;
+    font-size: 80px;
+    margin-bottom: -20px;
+}
+
+
+
+
+
+
+
+
+
+/* Cards */
+
+.product-wrapper,
+.product-img {
+    overflow: hidden;
+    position: relative;
+}
+
+.product-img img{
+    opacity: 0.5;
+}
+
+.mb-45 {
+    margin-bottom: 45px
+}
+
+.cards {
+    display: flex;
+    justify-content: center; /* Centers cards horizontally */
+    align-items: center; /* Centers cards vertically if needed */
+    flex-wrap: wrap; /* Ensures cards wrap to the next line if needed */
+    gap: 20px; /* Optional: adds spacing between cards */
+}
+
+
+.product-action {
+    bottom: 0px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    transition: all 0.6s ease 0s;
+    color: white;
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.product-wrapper {
+    border-radius: 10px;
+}
+
+.product-img>span {
+    background-color: #fff;
+    box-shadow: 0 0 8px 1.7px rgba(0, 0, 0, 0.06);
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    left: 20px;
+    letter-spacing: 1px;
+    padding: 3px 12px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    background: none;
+    color: white;
+}
+
+.product-action-style {
+    background-color: #fff;
+    box-shadow: 0 0 8px 1.7px rgba(0, 0, 0, 0.06);
+    display: inline-block;
+    padding: 16px 2px 12px;
+    background: none;
+}
+
+.product-action-style>a {
+    color: #979797;
+    line-height: 1;
+    padding: 0 21px;
+    position: relative
+}
+
+.product-action-style>a.action-plus {
+    font-size: 18px
+}
+
+.product-wrapper:hover .product-action {
+    bottom: 20px;
+    opacity: 1;
+}
+
+.col-md-3 {
+    flex: 0 0 auto; /* Adjust card width percentage */
+    max-width: 250px;
+}
+
+.product-wrapper {
+    padding: 15px; /* Adds more space inside the card */
+    border-radius: 12px;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+.product-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.mb-45 {
+    margin-bottom: 20px; /* Adjust spacing between cards */
+}
+
+
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 50%; /* Two cards per row on smaller screens */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex: 0 0 100%; /* One card per row on very small screens */
+        max-width: 100%;
+    }
+}
+
+
+
