@@ -4,9 +4,30 @@
     Author     : mudithmilinda
 --%>
 
+<%@page import="utils.DatabaseConnection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="dao.MovieDAO"%>
+<%@page import="model.Movie"%>
+<%@page import="java.sql.Connection"%><%-- Import your database connection utility --%>
+<%
+    int movieId = 0;
+    try {
+        movieId = Integer.parseInt(request.getParameter("movieId")); // Movie ID from query string
+    } catch (NumberFormatException e) {
+        out.println("Invalid Movie ID.");
+    }
 
+    Connection connection = DatabaseConnection.getConnection(); // Fetch the database connection
+    MovieDAO movieDAO = new MovieDAO(connection); // Initialize DAO with connection
+    Movie movie = movieDAO.getMovieById(movieId);
 
+    if (movie == null) {
+        out.println("<h1>Movie not found</h1>");
+        return; // Stop further processing if the movie is null
+    }
+
+    request.setAttribute("movie", movie);
+%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +47,7 @@
         <link rel="stylesheet" href="./css/Movie_profile.css">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/footer.css">
+        
     </head>
 
     <body>
@@ -167,6 +189,8 @@
 
             </div>
         </div>
+                        
+
 
         
 

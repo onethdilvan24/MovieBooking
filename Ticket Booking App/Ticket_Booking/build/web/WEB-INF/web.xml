@@ -13,24 +13,16 @@
         <servlet-class>BookingServlet.BookingServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>MovieDAO</servlet-name>
-        <servlet-class>MovieDAO.MovieDAO</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>DBConnection</servlet-name>
-        <servlet-class>DBConnection.DBConnection</servlet-class>
+        <servlet-class>utils.DBConnection</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Movie</servlet-name>
-        <servlet-class>Movie.Movie</servlet-class>
+        <servlet-class>model.Movie</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>MovieServlet</servlet-name>
-        <servlet-class>MovieServlet.MovieServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Movie1</servlet-name>
-        <servlet-class>Movie.Movie1</servlet-class>
+        <servlet-name>MovieDAO</servlet-name>
+        <servlet-class>dao.MovieDAO</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Contact_us</servlet-name>
@@ -45,10 +37,6 @@
         <url-pattern>/BookingServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>MovieDAO</servlet-name>
-        <url-pattern>/MovieDAO</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>DBConnection</servlet-name>
         <url-pattern>/DBConnection</url-pattern>
     </servlet-mapping>
@@ -57,11 +45,7 @@
         <url-pattern>/Movie</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>MovieServlet</servlet-name>
-        <url-pattern>/MovieServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Movie1</servlet-name>
-        <url-pattern>/Movie1</url-pattern>
+        <servlet-name>MovieDAO</servlet-name>
+        <url-pattern>/MovieDAO</url-pattern>
     </servlet-mapping>
 </web-app>
