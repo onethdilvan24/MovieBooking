@@ -32,6 +32,10 @@
         <servlet-name>Movie1</servlet-name>
         <servlet-class>Movie.Movie1</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Loginpackage.LoginServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Contact_us</servlet-name>
         <url-pattern>/Contact_us</url-pattern>
@@ -63,5 +67,9 @@
     <servlet-mapping>
         <servlet-name>Movie1</servlet-name>
         <url-pattern>/Movie1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
 </web-app>
