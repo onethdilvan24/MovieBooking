@@ -3,11 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/mudithmilinda/Documents/Ticket%20Booking%20App/Ticket_Booking/web/index.jsp</file>
-            <file>file:/Users/mudithmilinda/Documents/Ticket%20Booking%20App/Ticket_Booking/src/java/SeatSelectionApp/SeatSelectionApp.java</file>
-            <file>file:/Users/mudithmilinda/Documents/Ticket%20Booking%20App/Ticket_Booking/web/Select_seat.jsp</file>
-            <file>file:/Users/mudithmilinda/Documents/Ticket%20Booking%20App/Ticket_Booking/src/java/SeatSelectionServlet/SeatSelectionServlet.java</file>
-            <file>file:/Users/mudithmilinda/Documents/Ticket%20Booking%20App/Ticket_Booking/web/css/select_seat.css</file>
+            <file>file:/Users/mudithmilinda/Documents/GitHub/MovieBooking/Ticket%20Booking%20App/Ticket_Booking/web/Movie_profile.jsp</file>
+            <file>file:/Users/mudithmilinda/Documents/GitHub/MovieBooking/Ticket%20Booking%20App/Ticket_Booking/MovieSQL.sql</file>
+            <file>file:/Users/mudithmilinda/Documents/GitHub/MovieBooking/Ticket%20Booking%20App/Ticket_Booking/web/WEB-INF/web.xml</file>
+            <file>file:/Users/mudithmilinda/Documents/GitHub/MovieBooking/Ticket%20Booking%20App/Ticket_Booking/web/payment.jsp</file>
+            <file>file:/Users/mudithmilinda/Documents/GitHub/MovieBooking/Ticket%20Booking%20App/Ticket_Booking/web/Movies.jsp</file>
         </group>
     </open-files>
 </project-private>

@@ -8,6 +8,30 @@
         <servlet-name>SeatSelectionServlet</servlet-name>
         <servlet-class>SeatSelectionServlet.SeatSelectionServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>BookingServlet</servlet-name>
+        <servlet-class>BookingServlet.BookingServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MovieDAO</servlet-name>
+        <servlet-class>MovieDAO.MovieDAO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DBConnection</servlet-name>
+        <servlet-class>DBConnection.DBConnection</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Movie</servlet-name>
+        <servlet-class>Movie.Movie</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MovieServlet</servlet-name>
+        <servlet-class>MovieServlet.MovieServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Movie1</servlet-name>
+        <servlet-class>Movie.Movie1</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Contact_us</servlet-name>
         <url-pattern>/Contact_us</url-pattern>
@@ -15,5 +39,29 @@
     <servlet-mapping>
         <servlet-name>SeatSelectionServlet</servlet-name>
         <url-pattern>/SeatSelectionServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookingServlet</servlet-name>
+        <url-pattern>/BookingServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MovieDAO</servlet-name>
+        <url-pattern>/MovieDAO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DBConnection</servlet-name>
+        <url-pattern>/DBConnection</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Movie</servlet-name>
+        <url-pattern>/Movie</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MovieServlet</servlet-name>
+        <url-pattern>/MovieServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Movie1</servlet-name>
+        <url-pattern>/Movie1</url-pattern>
     </servlet-mapping>
 </web-app>

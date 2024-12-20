@@ -70,22 +70,25 @@
                                     <p class="h7 fw-bold mb-1">Contact information</p>
                                     <p class="textmuted h8 mb-2">Please fill out the form correctly</p>
                                     <div class="form">
-                                        <div class="row">
-                                            <div class="col-12 mt-2">
-                                                <div class="card border-0"> <input class="form-control ps-5" type="text"
-                                                                                   placeholder="Full Name"> <span class="far fa-credit-card"></span>
+                                        <form action="BookingServlet" method="POST">
+                                            <div class="row">
+                                                <div class="col-12 mt-2">
+                                                    <div class="card border-0">
+                                                        <input class="form-control ps-5" type="text" name="fullName" placeholder="Full Name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-3">
+                                                    <div class="card border-0">
+                                                        <input class="form-control ps-5" type="email" name="email" placeholder="Email" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <input class="form-control my-3" type="text" name="mobileNumber" placeholder="Mobile Number" required>
                                                 </div>
                                             </div>
-                                            <div class="col-12 mt-3">
-                                                <div class="card border-0"> <input class="form-control ps-5" type="text"
-                                                                                   placeholder="Email"> <span class="far fa-credit-card"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-6"> <input class="form-control my-3" type="text"
-                                                                       placeholder="Mobile Number">
-                                            </div>
-                                        </div>
+                                        </form>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -125,12 +128,12 @@
                                 <div class="details col-6 h8 pe-0 ps-2">
                                     <p class="textmuted py-2">Ticket</p>
                                     <span class="d-block py-2 border-bottom">ADULT</span>
-                                    
+
                                 </div>
                                 <div class="details col-2 text-center p-0">
                                     <p class="textmuted p-2">Qty</p>
                                     <span class="d-block p-2 border-bottom">2</span>
-                                    
+
                                 </div>
                                 <div class="details col-2 p-0 text-center h8 border-end">
                                     <p class="textmuted p-2">Price</p>

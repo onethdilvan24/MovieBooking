@@ -56,27 +56,33 @@
                         <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12">
                             <!-- section-title -->
                             <div class="section-title mb-0">
-                                <img src="image/Red one potrate.jpg" class="img-fluid rounded" alt="">
+<!--                                Movie Post-->
+                                <img src="${movie.post}" class="img-fluid rounded" alt="">
                             </div>
                             <!-- /.section-title -->
                         </div>
                         <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
                             <!-- section-title -->
                             <div class="section-title mb-0">
-                                <h2>RED ONE</h2>
-                                <p class="english">ENGLISH ACTION</p>
-                                <p class="watch"><a href="#" class="btn btn-brand mx-lg-3">Watch Trailer</a></p>
+<!--                                MOVIE NAME-->
+                                <h2>${movie.title}</h2> 
+<!--                                MOVIE LANG-->
+                                <p class="english">${movie.genre}</p>
+                                <p class="watch"><a href="${movie.trailer}" class="btn btn-brand mx-lg-3">Watch Trailer</a></p>
                                 <p class="infor">
                                     <i class="fa-solid fa-calendar-days pr-2"></i>
-                                    06 Nov 2024
+<!--                                    RELEASE DATE-->
+                                    ${movie.redate}
                                 </p>
                                 <p class="infor">
                                     <i class="fa-regular fa-clock pr-2"></i>
-                                    2 hrs 50 mins
+<!--                                    MOVIE TIME DEURATION-->
+                                    ${movie.duration}
                                 </p>
                                 <p class="infor">
                                     <i class="fa-solid fa-star pr-2"></i>
-                                    6.8 / 10
+<!--                                    MOVIE RATING-->
+                                    ${movie.rating}
                                 </p>
                                 <a href="payment.jsp" class="btn btn-brand mx-lg-3 mt-3">Book Tickets</a>
                             </div>
@@ -96,24 +102,24 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
-                            <h5 class="card-title">RED ONE</h5>
+<!--                            MOVIE NAME-->
+                            <h5 class="card-title">${movie.title}</h5>
+<!--                            MOVIE DESCRIPTION-->
                             <p class="card-text ">
-                                After Santa Claus (code name: Red One) is kidnapped, the North Pole's Head of Security
-                                (Dwayne Johnson) must team up with the world's most infamous bounty hunter (Chris Evans) in
-                                a globe-trotting, action-packed mission to save Christmas.
+                                ${movie.description}
                             </p>
                             <p class="card-text">
-                                Director : Jake Kasdan
+                                Director : ${movie.director}
                             </p>
                             <p class="card-text">
-                                Writers : Chris Morgan, Hiram Garica
+                                Writers : ${movie.writers}
                             </p>
                             <p class="card-text">
-                                Genres : Action Comedy Fantasy Adventure
+                                Genres : ${movie.genres}
                             </p>
                         </div>
                         <div class="col text-center mt-5">
-                            <img src='image/Red one potrate.jpg' title='' class="img-fluid rounded" />
+                            <img src='${movie.post}' title='' class="img-fluid rounded" />
                         </div>
                     </div>
                 </div>
@@ -128,33 +134,33 @@
                 <div class="col-md-2 col-sm-6">
                     <div class="box5">
                         <img class="pic-1 rounded mx-auto"
-                             src="MV5BOWUzNzIzMzQtNzMxYi00OWRiLTlhZjEtZTRjYWVkYzI4ZjMwXkEyXkFqcGc@._V1_.jpg">
+                             src="${movie.topone_img}">
                         <div class="box-content">
-                            <h3 class="title">Dwayan Johnson</h3>
+                            <h3 class="title">${movie.topone}</h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-6">
                     <div class="box5">
-                        <img class="pic-1" src="MV5BNzQ0YWM1ODEtZDFkYy00MGJhLTkwZDUtMzVkZjljODU3ZTRmXkEyXkFqcGc@._V1_.jpg">
+                        <img class="pic-1" src="${movie.toptwo_img}">
                         <div class="box-content">
-                            <h3 class="title">Chris Evans</h3>
+                            <h3 class="title">${movie.toptwo}</h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-6">
                     <div class="box5">
-                        <img class="pic-1" src="MV5BOTgxODE0MjI5Ml5BMl5BanBnXkFtZTcwMjkxMzMzMg@@._V1_.jpg">
+                        <img class="pic-1" src="${movie.topthree_img}">
                         <div class="box-content">
-                            <h3 class="title">Lucy Liu</h3>
+                            <h3 class="title">${movie.topthree}</h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-6">
                     <div class="box5">
-                        <img class="pic-1" src="MV5BMzg2NTI5NzQ1MV5BMl5BanBnXkFtZTgwNjI1NDEwMDI@._V1_.jpg">
+                        <img class="pic-1" src="${movie.topfour_img}">
                         <div class="box-content">
-                            <h3 class="title">J.K Simmons</h3>
+                            <h3 class="title">${movie.topfour}</h3>
                         </div>
                     </div>
                 </div>
@@ -162,43 +168,7 @@
             </div>
         </div>
 
-        <!-- NOW SHOWING AT -->
-
-        <div class="container mt-5">
-            <h3 class="topcast text-center">NOW SHOWING AT</h3>
-            <div class="row mt-5 g-4 justify-content-center">
-                <div class="col-md-2 col-sm-6">
-                    <div class="box5">
-                        <a href="/Location/Location.html#scope">
-                            <img class="pic-1 rounded mx-auto"
-                                 src="15d9e64a-46ca-4127-b53e-cae904bee3dc.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6">
-                    <div class="box5">
-                        <a href="/Location/Location.html#havelock">
-                            <img class="pic-1" src="Hcmlogo-removebg-preview.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6">
-                    <div class="box5">
-                        <a href="/Location/Location.html#pvr">
-                            <img class="pic-1" src="png-clipart-pvr-cinemas-logo-cinema-logos-removebg-preview.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6">
-                    <div class="box5">
-                        <a href="/Location/Location.html#liberty">
-                            <img class="pic-1" src="scope-cinemas-logo-w.png">
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        
 
 
         <!-- Footer -->
