@@ -11,7 +11,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class MovieDAO {
-    private Connection connection;
+    private final Connection connection;
 
     // Constructor to initialize the connection
     public MovieDAO(Connection connection) {

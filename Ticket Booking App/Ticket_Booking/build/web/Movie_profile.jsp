@@ -4,7 +4,7 @@
     Author     : mudithmilinda
 --%>
 
-<%@page import="utils.DatabaseConnection"%>
+<%@page import="utils.DBConnection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="dao.MovieDAO"%>
 <%@page import="model.Movie"%>
@@ -17,7 +17,7 @@
         out.println("Invalid Movie ID.");
     }
 
-    Connection connection = DatabaseConnection.getConnection(); // Fetch the database connection
+    Connection connection = DBConnection.getConnection(); // Fetch the database connection
     MovieDAO movieDAO = new MovieDAO(connection); // Initialize DAO with connection
     Movie movie = movieDAO.getMovieById(movieId);
 

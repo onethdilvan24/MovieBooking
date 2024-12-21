@@ -8,10 +8,12 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.mail.*;
 import jakarta.mail.internet.*;
+import jakarta.servlet.annotation.WebServlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Properties;
 
+@WebServlet("/seatBooking")
 public class BookingServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
